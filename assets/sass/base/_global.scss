@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  color: var(--main-clr);
+  direction: ltr;
+  overscroll-behavior: contain;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--main-clr);
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,12 @@
+@mixin flex($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin abs-center($x: 50%, $y: 50%, $translateX: -50%, $translateY: -50%) {
+  position: absolute;
+  top: $x;
+  left: $y;
+  transform: translate($translateX, $translateY);
+}

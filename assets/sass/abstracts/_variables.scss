@@ -1,0 +1,10 @@
+// private variable
+$main-pr-clr: rgba(22, 24, 35, 1);
+
+// public variable
+:root {
+  --main-clr: $main-pr-clr;
+  --black-clr: #000;
+  --white-clr: #fff;
+  --header-h: 4.7rem;
+}
