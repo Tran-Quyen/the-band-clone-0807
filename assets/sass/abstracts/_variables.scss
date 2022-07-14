@@ -3,8 +3,16 @@ $main-pr-clr: rgba(22, 24, 35, 1);
 
 // public variable
 :root {
-  --main-clr: $main-pr-clr;
+  // color
+  --main-clr: rgba(22, 24, 35, 1);
   --black-clr: #000;
   --white-clr: #fff;
   --header-h: 4.7rem;
+  --green-clr: #009688;
+  --lred-clr: #f44336;
+  --hover-clr: #ccc;
+
+  // font
+  --font-family: 'Lato', sans-serif;
+  --font-segoe: 'Segoe UI', sans-serif;
 }

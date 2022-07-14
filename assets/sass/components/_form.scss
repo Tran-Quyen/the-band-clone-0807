@@ -1,0 +1,15 @@
+.form-wrap {
+  @include flex(start, start);
+  flex-direction: column;
+  font-family: var(--font-family);
+
+  .form-label {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,24 @@
+html *::-webkit-scrollbar {
+  -webkit-appearance: none; // Luôn cho scrollbar xuất hiện
+}
+
+// CSS scrollbar dọc (Chrome)
+html *::-webkit-scrollbar:vertical {
+  width: 15px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  background-color: #34495e; // darken => Làm tối màu chỉ định
+  border-radius: 100rem;
+}
+
+html *::-webkit-scrollbar-thumb {
+  &:hover,
+  &:active {
+    background-color: darken(#34495e, 15);
+  }
+}
+
+html *::-webkit-scrollbar-track {
+  background-color: var(--hover-clr);
+}

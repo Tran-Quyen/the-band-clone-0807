@@ -28,11 +28,15 @@ header nav {
     &:hover {
       > a {
         color: var(--black-clr);
-        background-color: #ccc;
+        background-color: var(--hover-clr);
       }
 
       .arrow-down {
         color: var(--black-clr);
+      }
+
+      .subnav-list {
+        display: block;
       }
     }
 
@@ -48,12 +52,19 @@ header nav {
     left: 0;
     background-color: var(--white-clr);
     box-shadow: 0 0 5px 0 rgba(22, 24, 35, 0.89);
-    // display: none;
+    display: none;
   }
 
   .subnav-item {
     a {
       color: var(--black-clr);
+      width: 100%;
+    }
+
+    &:hover {
+      a {
+        background-color: var(--hover-clr);
+      }
     }
   }
 
@@ -65,7 +76,7 @@ header nav {
     line-height: var(--header-h);
 
     &:hover {
-      background-color: #f44336;
+      background-color: var(--lred-clr);
     }
   }
 }

@@ -3,7 +3,7 @@
 html {
   font-size: 62.5%;
   line-height: 1.5;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-family);
   text-rendering: optimizeSpeed;
 }
 
@@ -25,4 +25,41 @@ a:active {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  outline: none;
+  border: none;
+}
+
+.wrapper {
+  max-width: 100%;
+  width: 80rem;
+  padding: 7.4rem 0 11.2rem;
+  margin: 0 auto;
+}
+
+.band-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: var(--font-segoe);
+}
+
+.band-slogan {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-style: italic;
+  opacity: 0.6;
+  font-family: var(--font-family);
 }

@@ -1,0 +1,38 @@
+.modal.modal-place {
+  &.show {
+    .modal-dialog {
+      opacity: 1;
+      top: 10rem;
+    }
+  }
+
+  .modal-dialog {
+    top: -20rem;
+    max-width: 100%;
+    width: 90rem;
+
+    opacity: 0;
+    transition: 0.4s;
+    will-change: top, opacity;
+  }
+
+  .modal-header {
+    height: 12.9rem;
+    @include flex();
+    text-align: center;
+    color: var(--white-clr);
+    background-color: var(--green-clr);
+    h5 {
+      font-size: 3rem;
+    }
+  }
+
+  .modal-footer {
+    @include flex(space-between);
+
+    a {
+      color: #2196f3;
+      text-decoration: underline;
+    }
+  }
+}

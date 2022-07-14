@@ -10,3 +10,8 @@
   left: $y;
   transform: translate($translateX, $translateY);
 }
+
+@mixin square($size: 10rem) {
+  width: $size;
+  height: $size;
+}
