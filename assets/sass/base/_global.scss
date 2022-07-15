@@ -18,7 +18,8 @@ body {
 
 a,
 a:visited,
-a:active {
+a:active,
+a:hover {
   text-decoration: none;
   color: var(--main-clr);
 }
@@ -62,4 +63,8 @@ a {
   font-style: italic;
   opacity: 0.6;
   font-family: var(--font-family);
+}
+
+.half-w {
+  width: 50%;
 }

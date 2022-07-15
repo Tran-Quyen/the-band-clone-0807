@@ -352,7 +352,8 @@ body {
 
 a,
 a:visited,
-a:active {
+a:active,
+a:hover {
   text-decoration: none;
   color: var(--main-clr);
 }
@@ -396,6 +397,10 @@ a {
   font-style: italic;
   opacity: 0.6;
   font-family: var(--font-family);
+}
+
+.half-w {
+  width: 50%;
 }
 
 header nav {
@@ -480,8 +485,41 @@ header nav .search-btn:hover {
   background-color: var(--lred-clr);
 }
 
-footer .footer-map {
-  max-width: 100%;
+.footer {
+  text-align: center;
+}
+.footer-map {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.footer-copyright {
+  padding: 5rem 0;
+}
+.footer .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer .social-list .social-item {
+  opacity: 0.8;
+}
+.footer .social-list .social-item + .social-item {
+  margin-left: 1.5rem;
+}
+.footer .social-list .social-item:hover {
+  opacity: 0.6;
+}
+.footer-author {
+  display: inline-block;
+  font-weight: 600;
 }
 
 html *::-webkit-scrollbar {
@@ -689,6 +727,7 @@ html *::-webkit-scrollbar-track {
   width: 15.4rem;
   height: 15.4rem;
   margin: 0 auto;
+  border-radius: 4px;
 }
 
 .tour {
@@ -757,4 +796,57 @@ html *::-webkit-scrollbar-track {
 .tour .place-list .place-date {
   margin: 1.8rem 0 1.5rem;
   opacity: 0.6;
+}
+
+.contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.contact-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.contact .info-item {
+  font-size: 1.8rem;
+}
+.contact .info-item i {
+  font-weight: 600;
+  padding: 0 1.5rem;
+}
+.contact .info-item strong {
+  font-weight: 400;
+}
+.contact .info-item strong > a:hover {
+  color: #2cccff;
+}
+.contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.contact .form-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1.5rem;
+}
+.contact .form-input + .form-input {
+  margin-left: 1.5rem;
+}
+.contact .form-wrap.right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.contact .band-btn.uppercase {
+  text-transform: uppercase;
 }

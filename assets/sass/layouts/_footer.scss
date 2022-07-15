@@ -1,5 +1,33 @@
-footer {
-  .footer-map {
-    max-width: 100%;
+.footer {
+  text-align: center;
+  &-map {
+    filter: grayscale(50%);
+  }
+
+  &-copyright {
+    padding: 5rem 0;
+  }
+
+  .social-list {
+    @include flex();
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    .social-item {
+      opacity: 0.8;
+
+      + .social-item {
+        margin-left: 1.5rem;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &-author {
+    display: inline-block;
+    font-weight: 600;
   }
 }

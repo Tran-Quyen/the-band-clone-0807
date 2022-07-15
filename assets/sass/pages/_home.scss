@@ -3,6 +3,7 @@
   margin-top: var(--header-h);
 }
 
+// Carousel
 .carousel.slide.band-carousel {
   .carousel-caption {
     bottom: 4rem;
@@ -23,6 +24,7 @@
   }
 }
 
+// Member
 .member {
   article {
     text-align: justify;
@@ -49,9 +51,11 @@
   &-img {
     @include square(15.4rem);
     margin: 0 auto;
+    border-radius: 4px;
   }
 }
 
+// Tour
 .tour {
   background-color: var(--black-clr);
   color: var(--white-clr);
@@ -121,5 +125,60 @@
       margin: 1.8rem 0 1.5rem;
       opacity: 0.6;
     }
+  }
+}
+
+// contact
+.contact {
+  &-content {
+    @include flex(start, start);
+  }
+
+  &-info {
+    flex: 1;
+  }
+
+  .info-list {
+  }
+
+  .info-item {
+    font-size: 1.8rem;
+    i {
+      font-weight: 600;
+      padding: 0 1.5rem;
+    }
+
+    strong {
+      font-weight: 400;
+    }
+
+    strong > a {
+      &:hover {
+        color: #2cccff;
+      }
+    }
+  }
+
+  &-form {
+    flex: 1;
+  }
+
+  .form-wrap {
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-input {
+    + .form-input {
+      margin-left: 1.5rem;
+    }
+  }
+
+  .form-wrap.right {
+    justify-content: end;
+  }
+
+  .band-btn.uppercase {
+    text-transform: uppercase;
   }
 }
