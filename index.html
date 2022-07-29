@@ -77,29 +77,65 @@
 
   <body>
     <div id="app">
-      <header>
-        <nav>
+      <header id="header-flag"></header>
+
+      <header class="header">
+        <nav class="nav-pc">
           <ul class="nav-list" aria-level="nav-lv-1">
-            <li class="nav-item"><a href="!#">Home</a></li>
-            <li class="nav-item"><a href="!#">Band</a></li>
-            <li class="nav-item"><a href="!#">Tour</a></li>
-            <li class="nav-item"><a href="!#">Contact</a></li>
+            <li class="nav-item"><a href="#header-flag">Home</a></li>
+            <li class="nav-item"><a href="#member">Band</a></li>
+            <li class="nav-item"><a href="#tour">Tour</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
             <li class="nav-item">
-              <a href="!#"
-                >More <i class="fa-solid fa-caret-down arrow-down"></i>
+              <a href="#">
+                More <i class="fa-solid fa-caret-down arrow-down"></i>
               </a>
 
               <ul class="subnav-list" aria-level="nav-lv-2">
-                <li class="subnav-item"><a href="!#">Merchandise</a></li>
-                <li class="subnav-item"><a href="!#">Extras</a></li>
-                <li class="subnav-item"><a href="!#">Media</a></li>
+                <li class="subnav-item"><a href="#">Merchandise</a></li>
+                <li class="subnav-item"><a href="#">Extras</a></li>
+                <li class="subnav-item"><a href="#">Media</a></li>
               </ul>
             </li>
           </ul>
 
-          <a href="!#" class="search-btn">
+          <a href="#" class="search-btn">
             <i class="fa-solid fa-magnifying-glass"></i>
           </a>
+        </nav>
+
+        <nav class="nav-mobile">
+          <div class="nav-mobile-main">
+            <h1 class="nav-mobile-home"><a href="#header-flag">Home</a></h1>
+            <button class="menu-mobile-btn" data-toggle-btn="nav-mobile-list">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <ul
+            class="nav-list"
+            aria-level="nav-mobile-lv-1"
+            data-toggle-menu="nav-mobile-list"
+          >
+            <li class="nav-item"><a href="#member">Band</a></li>
+            <li class="nav-item"><a href="#tour">Tour</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <a href="#" data-toggle-btn="subnav-mobile-list">
+                More <i class="fa-solid fa-caret-down arrow-down"></i>
+              </a>
+
+              <ul
+                class="subnav-list"
+                aria-level="nav-mobile-lv-2"
+                data-toggle-menu="subnav-mobile-list"
+              >
+                <li class="subnav-item"><a href="#">Merchandise</a></li>
+                <li class="subnav-item"><a href="#">Extras</a></li>
+                <li class="subnav-item"><a href="#">Media</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -151,7 +187,7 @@
         <!-- ./Band Carousel -->
 
         <!-- Member -->
-        <section class="member">
+        <section class="member" id="member">
           <div class="wrapper">
             <h2 class="band-title">The band</h2>
             <p class="band-slogan">We love music</p>
@@ -206,7 +242,7 @@
         <!-- ./Member -->
 
         <!-- Tour dates -->
-        <section class="tour">
+        <section class="tour" id="tour">
           <div class="wrapper">
             <h2 class="band-title">Tour dates</h2>
             <p class="band-slogan">Remember to book your tickets!</p>
@@ -295,7 +331,7 @@
         <!-- ./Tour dates -->
 
         <!-- Contact -->
-        <section class="contact">
+        <section class="contact" id="contact">
           <div class="wrapper">
             <h2 class="band-title">Contact</h2>
             <p class="band-slogan">Fan? Drop a note!</p>
@@ -371,32 +407,32 @@
         <section class="footer-copyright">
           <ul class="social-list">
             <li class="social-item">
-              <a href="!#">
+              <a href="#">
                 <i class="fa-brands fa-facebook-square"></i>
               </a>
             </li>
             <li class="social-item">
-              <a href="!#">
+              <a href="#">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
             <li class="social-item">
-              <a href="!#">
+              <a href="#">
                 <i class="fa-brands fa-snapchat"></i>
               </a>
             </li>
             <li class="social-item">
-              <a href="!#"> <i class="fa-brands fa-pinterest"></i></a>
+              <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
             </li>
             <li class="social-item">
-              <a href="!#"><i class="fa-brands fa-twitter"></i> </a>
+              <a href="#"><i class="fa-brands fa-twitter"></i> </a>
             </li>
             <li class="social-item">
-              <a href="!#"> <i class="fa-brands fa-linkedin"></i> </a>
+              <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
             </li>
           </ul>
 
-          <p class="footer-author">Powered by <a href="!#">Quyen Dang</a></p>
+          <p class="footer-author">Powered by <a href="#">Quyen Dang</a></p>
         </section>
       </footer>
 
@@ -473,7 +509,7 @@
                 Close <i class="fa-solid fa-xmark"></i>
               </button>
 
-              <p>Need <a href="!#">help?</a></p>
+              <p>Need <a href="#">help?</a></p>
             </div>
           </div>
         </div>

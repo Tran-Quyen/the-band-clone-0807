@@ -15,3 +15,27 @@
   width: $size;
   height: $size;
 }
+
+// Responsive
+$mobile-max-w: 46.1875em;
+$tablet-max-w: 63.9375em;
+$tablet-min-w: 46.25em;
+$desktop-min-w: 64em;
+
+@mixin mobile {
+  @media (max-width: $mobile-max-w) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-min-w) and (max-width: $tablet-max-w) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-min-w) {
+    @content;
+  }
+}

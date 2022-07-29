@@ -1,4 +1,9 @@
-header nav {
+#header-flag {
+  display: none;
+  height: var(--header-h);
+}
+
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,7 +11,14 @@ header nav {
   height: var(--header-h);
   background-color: var(--black-clr);
   z-index: 1000;
+}
+
+.header .nav-pc {
   @include flex(space-between);
+
+  @include mobile {
+    display: none;
+  }
 
   .nav-list {
     max-width: 70%;
@@ -77,6 +89,82 @@ header nav {
 
     &:hover {
       background-color: var(--lred-clr);
+    }
+  }
+}
+
+.header .nav-mobile {
+  display: none;
+  color: var(--white-clr);
+  &-main {
+    @include flex(space-between);
+    h1 {
+      margin: 0;
+
+      &:hover a {
+        color: var(--black-clr);
+        background-color: var(--hover-clr);
+      }
+    }
+
+    a {
+      display: block;
+      color: inherit;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      padding: 0 2.4rem;
+      height: var(--header-h);
+      line-height: var(--header-h);
+    }
+
+    .menu-mobile-btn {
+      padding: 0 2rem;
+      height: var(--header-h);
+      color: inherit;
+      background-color: transparent;
+
+      &:hover {
+        color: var(--black-clr);
+        background-color: var(--hover-clr);
+      }
+    }
+  }
+
+  @include mobile {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    background-color: var(--black-clr);
+  }
+
+  .nav-item {
+    a {
+      display: block;
+      color: var(--white-clr);
+      padding: 1.2rem 2.4rem;
+      text-transform: uppercase;
+    }
+
+    &:hover > a {
+      color: var(--black-clr);
+      background-color: var(--hover-clr);
+    }
+  }
+
+  .subnav-list {
+    display: none;
+  }
+
+  .subnav-item {
+    a {
+      padding: 1.2rem 3.5rem;
+    }
+
+    &:hover > a {
+      color: var(--black-clr);
+      background-color: var(--hover-clr);
     }
   }
 }
