@@ -8,8 +8,9 @@
 
   .modal-dialog {
     top: -20rem;
-    max-width: 100%;
+    max-width: calc(100% - 15px * 2);
     width: 90rem;
+    margin: 0 auto;
 
     opacity: 0;
     transition: 0.4s;

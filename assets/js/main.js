@@ -7,7 +7,8 @@ $(toggleBtnList).each(function () {
     display: 'none',
   });
 
-  this.onclick = function () {
+  this.onclick = function (e) {
+    e.preventDefault();
     if (menu.style.display === 'none') {
       $(menu).css({
         display: 'block',

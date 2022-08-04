@@ -46,6 +46,11 @@ a {
   width: 80rem;
   padding: 7.4rem 0 11.2rem;
   margin: 0 auto;
+
+  @include tablet_and_mobile {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .band-title {

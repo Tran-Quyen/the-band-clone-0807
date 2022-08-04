@@ -35,10 +35,18 @@
 
   &-list {
     @include flex(start);
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &-item {
     flex: 1;
+    width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+    }
   }
 
   &-name {
@@ -49,7 +57,7 @@
   }
 
   &-img {
-    @include square(15.4rem);
+    width: 60%;
     margin: 0 auto;
     border-radius: 4px;
   }
@@ -99,11 +107,21 @@
     margin-right: -8px;
     font-size: 1.5rem;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .place-item {
       padding: 0 8px;
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-top: 1.5rem;
+      }
     }
 
     .place-img {
+      width: 100%;
       &:hover {
         opacity: 0.7;
       }
@@ -125,6 +143,12 @@
       margin: 1.8rem 0 1.5rem;
       opacity: 0.6;
     }
+
+    @include mobile {
+      .band-btn {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -132,6 +156,10 @@
 .contact {
   &-content {
     @include flex(start, start);
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &-info {
@@ -146,6 +174,11 @@
     i {
       font-weight: 600;
       padding: 0 1.5rem;
+
+      @include mobile {
+        padding-right: 1.5rem;
+        padding-left: 0;
+      }
     }
 
     strong {
@@ -161,16 +194,34 @@
 
   &-form {
     flex: 1;
+
+    @include mobile {
+      margin-top: 1.5rem;
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   .form-wrap {
     flex-direction: row;
-    margin-bottom: 1.5rem;
+
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   .form-input {
     + .form-input {
       margin-left: 1.5rem;
+
+      @include mobile {
+        margin-left: 0;
+        margin-top: 1.5rem;
+      }
     }
   }
 
@@ -180,5 +231,9 @@
 
   .band-btn.uppercase {
     text-transform: uppercase;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }
